@@ -18,7 +18,7 @@ A clean and stylish clock built using **HTML**, **CSS**, and **JavaScript** that
 
 ## 🔗 Live Website
 
-👉 [View Live](https://m-hassanjavaid.github.io/My-Clock/)
+👉 [View Live](https://m-hassanjavaid.github.io/Analog-and-Digital-clock/)
 
 ## 📂 How to Use
 
