@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Underdog", system-ui;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Analouge clock */
+
+#Analouge-clock{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid black;
+}
+
+#Analouge-clock::before{
+    content: '';
+    height: 5%;
+    width: 5%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+}
+
+.clock-numbers{
+    position: absolute;
+}
+
+#num12{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#num1{
+    top: 9%;
+    right: 26%;
+}
+
+#num2{
+    top: 25%;
+    right: 8%;
+}
+
+#num3{
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#num4{
+    top: 70%;
+    right: 9%;
+}
+
+#num5{
+    top: 87%;
+    right: 26%;
+}
+
+#num6{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#num7{
+    top: 86%;
+    left: 26%;
+}
+
+#num8{
+    top: 69%;
+    left: 9%;
+}
+
+#num9{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#num10{
+    top: 25%;
+    left: 9%;
+}
+
+#num11{
+    left: 26%;
+    top: 9%;
+}
+
+#seconds-hand , #hours-hands , #minutes-second{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#seconds-hand::before{
+    content: '';
+    height: calc(50% - 30px);
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+#hours-hands::before{
+    content: '';
+    height: calc(50% - 70px);
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+#minutes-second::before{
+    content: '';
+    height: calc(50% - 45px);
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+
+/* Digital Clock */
+
+#digital-clock p{
+    letter-spacing: 10px;
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
