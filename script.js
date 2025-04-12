@@ -45,7 +45,7 @@ function updateTime() {
     moveSeconds(seconds);
     moveMinutes(minutes);
     moveHours(hours , minutes)
-    updateDigitalClock(seconds , minutes , hours , amPm)
+    updateDigitalClock(seconds , minutes , hours , amPm);
 }
 
 setInterval(() => {
